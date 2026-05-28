@@ -88,3 +88,16 @@ button:hover{
 body{
     background:#e5e7eb;
 }
+table{
+    background:white;
+    border-collapse:collapse;
+}
+
+th{
+    background:#111827;
+    color:white;
+}
+
+td, th{
+    padding:12px;
+}
