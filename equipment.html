@@ -19,30 +19,41 @@
 <nav>
     <a href="index.html">Главная</a>
     <a href="equipment.html">Оборудование</a>
+    <a href="users.html">Пользователи</a>
 </nav>
 
 <div class="container">
-<div class="card">
 
-    <h2>Добавить оборудование</h2>
-
-    <input type="text" placeholder="Название оборудования"
-    style="width:100%; padding:10px; margin-bottom:10px;">
-
-    <input type="text" placeholder="Модель"
-    style="width:100%; padding:10px; margin-bottom:10px;">
-
-    <input type="text" placeholder="Серийный номер"
-    style="width:100%; padding:10px; margin-bottom:10px;">
-
-    <button onclick="addEquipment()">
-    Сохранить оборудование
-</button>
-
-</div>
     <div class="card">
+
+        <h2>Добавить оборудование</h2>
+
+        <input type="text"
+        placeholder="Название оборудования"
+        style="width:100%; padding:10px; margin-bottom:10px;">
+
+        <input type="text"
+        placeholder="Модель"
+        style="width:100%; padding:10px; margin-bottom:10px;">
+
+        <input type="text"
+        placeholder="Серийный номер"
+        style="width:100%; padding:10px; margin-bottom:10px;">
+
+        <button onclick="addEquipment()">
+            Сохранить оборудование
+        </button>
+
+    </div>
+
+    <div class="card">
+
         <h2>Оборудование организации</h2>
-        <input type="text" placeholder="Поиск оборудования..." style="width:100%; padding:10px; margin-bottom:20px;">
+
+        <input type="text"
+        placeholder="Поиск оборудования..."
+        style="width:100%; padding:10px; margin-bottom:20px;">
+
         <table width="100%" border="1" cellspacing="0" cellpadding="10">
 
             <tr>
@@ -58,11 +69,12 @@
                 <td>Ноутбук</td>
                 <td>Lenovo ThinkPad</td>
                 <td>Используется</td>
-<td>
-    <button onclick="deleteItem()">
-        Удалить
-    </button>
-</td>
+
+                <td>
+                    <button onclick="deleteItem()">
+                        Удалить
+                    </button>
+                </td>
             </tr>
 
             <tr>
@@ -70,6 +82,12 @@
                 <td>Принтер</td>
                 <td>HP LaserJet</td>
                 <td>На складе</td>
+
+                <td>
+                    <button onclick="deleteItem()">
+                        Удалить
+                    </button>
+                </td>
             </tr>
 
             <tr>
@@ -77,6 +95,12 @@
                 <td>Маршрутизатор</td>
                 <td>MikroTik</td>
                 <td>Активен</td>
+
+                <td>
+                    <button onclick="deleteItem()">
+                        Удалить
+                    </button>
+                </td>
             </tr>
 
         </table>
@@ -84,6 +108,8 @@
     </div>
 
 </div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
