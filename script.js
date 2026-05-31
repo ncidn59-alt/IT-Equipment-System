@@ -8,3 +8,8 @@ function deleteItem(){
     alert("Оборудование удалено!");
 
 }
+function loginUser(){
+
+    alert("Вход выполнен успешно!");
+
+}
