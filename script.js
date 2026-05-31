@@ -13,3 +13,8 @@ function loginUser(){
     alert("Вход выполнен успешно!");
 
 }
+function registerUser(){
+
+    alert("Регистрация успешно выполнена!");
+
+}
