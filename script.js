@@ -1,20 +1,15 @@
-function addEquipment(){
-
-    alert("Оборудование успешно добавлено!");
-
+function addEquipment() {
+    alert("✅ Оборудование успешно добавлено в систему AssetCore!");
 }
-function deleteItem(){
 
-    alert("Оборудование удалено!");
-
+function deleteItem() {
+    alert("🗑️ Оборудование удалено из системы!");
 }
-function loginUser(){
 
-    alert("Вход выполнен успешно!");
-
+function loginUser() {
+    alert("🔐 Вход выполнен успешно!");
 }
-function registerUser(){
 
-    alert("Регистрация успешно выполнена!");
-
+function registerUser() {
+    alert("👤 Регистрация выполнена успешно!");
 }
