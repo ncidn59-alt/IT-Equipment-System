@@ -5,62 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AssetCore - Пользователи</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <h1>👥 AssetCore — Пользователи</h1>
-</header>
+<div class="sidebar">
 
-<nav>
+    <h2>🖥️ AssetCore</h2>
+
+    <a href="login.html">Вход</a>
+    <a href="register.html">Регистрация</a>
     <a href="index.html">Главная</a>
     <a href="equipment.html">Оборудование</a>
     <a href="users.html">Пользователи</a>
     <a href="profile.html">Профиль</a>
     <a href="movement.html">Перемещения</a>
     <a href="reports.html">Отчеты</a>
-    <a href="admin.html">Админ</a>
     <a href="repair.html">Ремонт</a>
-</nav>
-
-<div class="container">
-
-    <div class="card">
-
-<h2>Список сотрудников</h2>
-
-<table width="100%" border="1" cellspacing="0" cellpadding="10">
-
-<tr>
-<th>ФИО</th>
-<th>Должность</th>
-<th>Оборудование</th>
-</tr>
-
-<tr>
-<td>Иванов Иван</td>
-<td>Системный администратор</td>
-<td>Lenovo ThinkPad</td>
-</tr>
-
-<tr>
-<td>Петров Петр</td>
-<td>Бухгалтер</td>
-<td>HP LaserJet</td>
-</tr>
-
-<tr>
-<td>Сидоров Алексей</td>
-<td>Менеджер</td>
-<td>Dell Latitude</td>
-</tr>
-
-</table>
+    <a href="admin.html">Админ</a>
 
 </div>
+
+<div class="main">
+
+<header>
+    <h1>👥 AssetCore — Пользователи</h1>
+</header>
+
+<div class="container">
 
     <div class="card">
 
@@ -73,27 +46,39 @@
                 <th>ФИО</th>
                 <th>Должность</th>
                 <th>Отдел</th>
+                <th>Оборудование</th>
             </tr>
 
             <tr>
                 <td>1</td>
-                <td>Иванов И.И.</td>
+                <td>Иванов Иван Иванович</td>
                 <td>Системный администратор</td>
                 <td>IT-отдел</td>
+                <td>Lenovo ThinkPad</td>
             </tr>
 
             <tr>
                 <td>2</td>
-                <td>Петров А.А.</td>
+                <td>Петров Петр Петрович</td>
                 <td>Программист</td>
-                <td>Разработка</td>
+                <td>Отдел разработки</td>
+                <td>Dell Latitude</td>
             </tr>
 
             <tr>
                 <td>3</td>
-                <td>Сидоров В.В.</td>
+                <td>Сидоров Алексей Викторович</td>
                 <td>Менеджер</td>
                 <td>Администрация</td>
+                <td>HP LaserJet</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Кузнецов Андрей Сергеевич</td>
+                <td>Бухгалтер</td>
+                <td>Бухгалтерия</td>
+                <td>Samsung Monitor</td>
             </tr>
 
         </table>
@@ -101,6 +86,10 @@
     </div>
 
 </div>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
