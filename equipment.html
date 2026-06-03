@@ -4,28 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>AssetCore - Оборудование</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <h1>🖥️ AssetCore — Оборудование</h1>
-</header>
+<div class="sidebar">
 
-<nav>
+    <h2>🖥️ AssetCore</h2>
+
+    <a href="login.html">Вход</a>
+    <a href="register.html">Регистрация</a>
     <a href="index.html">Главная</a>
     <a href="equipment.html">Оборудование</a>
     <a href="users.html">Пользователи</a>
     <a href="profile.html">Профиль</a>
     <a href="movement.html">Перемещения</a>
     <a href="reports.html">Отчеты</a>
-    <a href="admin.html">Админ</a>
     <a href="repair.html">Ремонт</a>
-</nav>
+    <a href="admin.html">Админ</a>
+
+</div>
+
+<div class="main">
+
+<header>
+    <h1>🖥️ AssetCore — Оборудование</h1>
+</header>
 
 <div class="container">
 
@@ -33,16 +39,13 @@
 
         <h2>Добавить оборудование</h2>
 
-        <input type="text"
-        placeholder="Название оборудования"
+        <input type="text" placeholder="Название оборудования"
         style="width:100%; padding:10px; margin-bottom:10px;">
 
-        <input type="text"
-        placeholder="Модель"
+        <input type="text" placeholder="Модель"
         style="width:100%; padding:10px; margin-bottom:10px;">
 
-        <input type="text"
-        placeholder="Серийный номер"
+        <input type="text" placeholder="Серийный номер"
         style="width:100%; padding:10px; margin-bottom:10px;">
 
         <button onclick="addEquipment()">
@@ -55,8 +58,7 @@
 
         <h2>Оборудование организации</h2>
 
-        <input type="text"
-        placeholder="Поиск оборудования..."
+        <input type="text" placeholder="Поиск оборудования..."
         style="width:100%; padding:10px; margin-bottom:20px;">
 
         <table width="100%" border="1" cellspacing="0" cellpadding="10">
@@ -73,12 +75,9 @@
                 <td>1</td>
                 <td>Ноутбук</td>
                 <td>Lenovo ThinkPad</td>
-                <td>Используется</td>
-
+                <td>В эксплуатации</td>
                 <td>
-                    <button onclick="deleteItem()">
-                        Удалить
-                    </button>
+                    <button onclick="deleteItem()">Удалить</button>
                 </td>
             </tr>
 
@@ -87,11 +86,8 @@
                 <td>Принтер</td>
                 <td>HP LaserJet</td>
                 <td>На складе</td>
-
                 <td>
-                    <button onclick="deleteItem()">
-                        Удалить
-                    </button>
+                    <button onclick="deleteItem()">Удалить</button>
                 </td>
             </tr>
 
@@ -99,18 +95,27 @@
                 <td>3</td>
                 <td>Маршрутизатор</td>
                 <td>MikroTik</td>
-                <td>Активен</td>
-
+                <td>На ремонте</td>
                 <td>
-                    <button onclick="deleteItem()">
-                        Удалить
-                    </button>
+                    <button onclick="deleteItem()">Удалить</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Монитор</td>
+                <td>Samsung S24</td>
+                <td>Списано</td>
+                <td>
+                    <button onclick="deleteItem()">Удалить</button>
                 </td>
             </tr>
 
         </table>
 
     </div>
+
+</div>
 
 </div>
 
