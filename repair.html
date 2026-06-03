@@ -2,59 +2,93 @@
 <html lang="ru">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Заявки на ремонт</title>
-
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AssetCore - Ремонт</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-<h1>Заявки на ремонт оборудования</h1>
-</header>
+<div class="sidebar">
 
-<nav>
-<a href="index.html">Главная</a>
-<a href="equipment.html">Оборудование</a>
-<a href="users.html">Пользователи</a>
-<a href="profile.html">Профиль</a>
-<a href="movement.html">Перемещения</a>
-<a href="reports.html">Отчеты</a>
-<a href="admin.html">Админ</a>
-<a href="repair.html">Ремонт</a>
-</nav>
+    <h2>🖥️ AssetCore</h2>
+
+    <a href="login.html">Вход</a>
+    <a href="register.html">Регистрация</a>
+    <a href="index.html">Главная</a>
+    <a href="equipment.html">Оборудование</a>
+    <a href="users.html">Пользователи</a>
+    <a href="profile.html">Профиль</a>
+    <a href="movement.html">Перемещения</a>
+    <a href="reports.html">Отчеты</a>
+    <a href="repair.html">Ремонт</a>
+    <a href="admin.html">Админ</a>
+
+</div>
+
+<div class="main">
+
+<header>
+    <h1>🔧 AssetCore — Ремонт оборудования</h1>
+    <p>Учет заявок на обслуживание и ремонт техники</p>
+</header>
 
 <div class="container">
 
-<div class="card">
+    <div class="card">
 
-<h2>Создать заявку</h2>
+        <h2>Создать заявку на ремонт</h2>
 
-<input type="text" placeholder="Название оборудования"
-style="width:100%;padding:10px;margin-bottom:10px;">
+        <input type="text" placeholder="Название оборудования">
 
-<input type="text" placeholder="Описание неисправности"
-style="width:100%;padding:10px;margin-bottom:10px;">
+        <input type="text" placeholder="Описание неисправности">
 
-<button>Отправить заявку</button>
+        <button>
+            Отправить заявку
+        </button>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Текущие заявки</h2>
+
+        <table width="100%" border="1" cellspacing="0" cellpadding="10">
+
+            <tr>
+                <th>Оборудование</th>
+                <th>Неисправность</th>
+                <th>Статус</th>
+            </tr>
+
+            <tr>
+                <td>Ноутбук Lenovo</td>
+                <td>Не включается</td>
+                <td>В ремонте</td>
+            </tr>
+
+            <tr>
+                <td>Принтер HP</td>
+                <td>Замятие бумаги</td>
+                <td>Ожидает ремонта</td>
+            </tr>
+
+            <tr>
+                <td>Монитор Samsung</td>
+                <td>Нет изображения</td>
+                <td>Диагностика</td>
+            </tr>
+
+        </table>
+
+    </div>
 
 </div>
 
-<div class="card">
-
-<h2>Текущие заявки</h2>
-
-<ul>
-<li>Ноутбук Lenovo — Не включается</li>
-<li>Принтер HP — Замятие бумаги</li>
-<li>Монитор Samsung — Нет изображения</li>
-</ul>
-
 </div>
 
-</div>
+<script src="script.js"></script>
 
 </body>
 </html>
